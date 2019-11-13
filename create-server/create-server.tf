@@ -1,3 +1,9 @@
+provider "sakuracloud" { 
+  token = "API_TOKEN_HERE"
+  secret = "API_SECRET_HERE"
+  xone = "is1b"
+}
+
 resource "sakuracloud_disk"{
   name = "disk1"
   source_archive_id = "${date.sakuracloud_archive.centos.id}"
